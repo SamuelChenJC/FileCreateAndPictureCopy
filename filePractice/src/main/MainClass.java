@@ -22,8 +22,6 @@ public class MainClass {
         //查找文件
         List<File> fileList = FileUtil.findFiles(dir, false);
 
-//        System.out.println("返回的字符串长度："+content.length());
-
         File targetFile = new File("E:/allText/resultFile/人民的名义(全54章).txt");
         if (FileUtil.createFile(targetFile.getPath())) {
             System.out.println("成功生成目标文件：" + targetFile.getPath());
