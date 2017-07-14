@@ -1,9 +1,8 @@
 package other;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Chenpi on 2017/7/13.
@@ -11,6 +10,105 @@ import java.io.IOException;
 public class FileUtil {
 
 
+    /**
+     * 查询一个目录下的文件
+     * @param dirFile       文件目录
+     * @param isNeedSonFolder   是否需要子文件夹的文件
+     */
+    public static List<File> findFiles(File dirFile, boolean isNeedSonFolder) {
+
+        File[] files = dirFile.listFiles();
+
+        List<File> fileList = new ArrayList<>();
+
+        if (files != null) {
+            for (File file : files) {
+                if (file.isFile()) {
+                    fileList.add(file);
+                    System.out.println("路径：" + file.getParent() + " 文件名：" + file.getName());
+                } else {
+                    if (isNeedSonFolder) {
+                        List<File> sonList = findFiles(file, false);
+                        fileList.addAll(sonList);
+                    }
+                }
+            }
+        }
+        return fileList;
+    }
+
+
+    /**
+     * 读出文件里的文本
+     * @param file
+     * @return
+     */
+    public static String readFile(File file) {
+
+        String content = null;
+
+        try {
+//            FileReader fileReader = new FileReader(file);     //直接用这两行注释的 会中文乱码
+//            BufferedReader bufferedReader = new BufferedReader(fileReader);//用这个是因为可以readLine()一行行读。不用也可以
+
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(file),"GB2312"));
+
+            StringBuffer stringBuffer = new StringBuffer();
+
+            while (bufferedReader.ready()) {
+                stringBuffer.append("\t");
+                stringBuffer.append(bufferedReader.readLine());
+                stringBuffer.append("\n"); //append 会在紧靠末尾拼接，丢失文本的换行等格式,所以每读一行就换行
+//                System.out.println("读取一行："+bufferedReader.readLine());
+            }
+//            System.out.println("拼接的文本："+stringBuffer);
+//            System.out.println(stringBuffer.toString());
+
+            content =  stringBuffer.toString();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("fileReader出错：" + file);
+        }
+
+
+
+        return content;
+    }
+
+    /**
+     * 向文件中写入文本
+     * @param targetFile    要写入的目标文件
+     * @param content       写入的内容
+     */
+    public static void writeFile(File targetFile, String content) {
+
+        try {
+//            FileWriter fileWriter = new FileWriter(targetFile);
+
+            /**此处FileOutputStream 加true是在原文件末尾追加文本，不加则原文件内容被覆盖    */
+            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(targetFile,true),"utf-8"));
+
+            bufferedWriter.write(content);
+            bufferedWriter.flush();
+            bufferedWriter.close();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("写文件出错：");
+        }
+
+        System.out.println("写入成功！");
+    }
+
+
+
+
+    /**
+     * 复制图片
+     * @param oldDir
+     * @param newDir
+     */
     public static void copyPic(String oldDir, String newDir) {
         File old = new File(oldDir);
         File newFile = new File(newDir);
@@ -90,6 +188,7 @@ public class FileUtil {
         File file = new File(destFileName);//根据路径和文件名 创建文件
         if(file.exists()) {
             System.out.println("创建单个文件" + destFileName + "失败，目标文件已存在！");
+//            file.delete();
             return false;
         }
         if (destFileName.endsWith(File.separator)) {

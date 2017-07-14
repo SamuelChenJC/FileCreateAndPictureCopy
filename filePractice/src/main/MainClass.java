@@ -2,23 +2,57 @@ package main;
 
 import other.FileUtil;
 
+import java.io.File;
+import java.util.List;
+
 /**
  * Created by Chenpi on 2017/7/13.
  */
 public class MainClass {
 
-    /**
-     * 用IO进行一个图片复制
+    /***
+     * 读取一个文件夹下所有文件，并内容拼接到一个文件里
+     * https://zhidao.baidu.com/question/1368120362072340179.html
      * @param args
      */
     public static void main(String[] args) {
 
-        String old = "D:/old_pic/pic.png";
-        String newP = "D:/new_pic/pic_new.png";
-        FileUtil.copyPic(old,newP);//方法用了static修饰，可以类名打点调用
+        File dir = new File("E:/allText");
+
+        //查找文件
+        List<File> fileList = FileUtil.findFiles(dir, false);
+
+//        System.out.println("返回的字符串长度："+content.length());
+
+        File targetFile = new File("E:/allText/resultFile/人民的名义(全54章).txt");
+        if (FileUtil.createFile(targetFile.getPath())) {
+            System.out.println("成功生成目标文件：" + targetFile.getPath());
+        }
+
+        long startTime = System.currentTimeMillis();
+        for (File file : fileList) {
+            String content = FileUtil.readFile(file);
+
+            FileUtil.writeFile(targetFile,content);
+            System.out.println("处理完成："+file.getPath());
+        }
+        System.out.println("处理文件(个) " + fileList.size() + "，共用时 " + (System.currentTimeMillis() - startTime));
     }
 
 
+
+
+    /**
+     * 用IO进行一个图片复制
+     * http://blog.csdn.net/u011401496/article/details/38875349
+     * @param args
+     */
+//    public static void main(String[] args) {
+//
+//        String old = "D:/old_pic/pic.png";
+//        String newP = "D:/new_pic/pic_new.png";
+//        FileUtil.copyPic(old,newP);//方法用了static修饰，可以类名打点调用
+//    }
 
 
     /**
