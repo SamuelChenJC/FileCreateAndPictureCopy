@@ -22,8 +22,9 @@ public class Main {
 
         // problem3();
 
-        int[] ints4 = {9,500,5001,3,6,7};
-        problem4(ints4);
+        int[] ints4 = {7,65,8,49,76,99,2};
+        problem4_1(ints4);
+        problem4_2(ints4);
         //
         // String aa = "22";
         // String aa2 = "224";
@@ -41,6 +42,7 @@ public class Main {
         }
 
         int length = series.length;
+
         int sum = 0;
         for (int i = 0;i<length;i++) {
             sum += series[i];
@@ -138,7 +140,7 @@ public class Main {
      * 编写一个能将给定非负整数列表中的数字排列成最大数字的函数。
      * 例如，给定[50，2，1,9]，最大数字为95021。
      */
-    private static void problem4(int[] ints) {
+    private static void problem4_1(int[] ints) {
 
         List<String> s1 = new ArrayList<>();
 
@@ -146,30 +148,47 @@ public class Main {
             System.out.println(integer);
             s1.add(integer.toString());
         }
-        List<String> s2 = new LinkedList<>();
+        // List<String> s2 = new LinkedList<>();
 
-        int n = 0;//n用于设置LinkedList的索引，
+        String result = "";
+        // int n = 0;//n用于设置LinkedList的索引，
         for (int i = 0; i < s1.size();) {//每次都会移除，所以不需要自增。否则会跳过某些元素
             String tem = s1.get(i);
             for (int j = i+1;j<s1.size();j++) {//j自增，以循环剩下元素
                 System.out.println("开始：" + s1.get(j));
-
-                // String result = compare1(s1.get(i), s1.get(j), 0);
-                String result = compare2(s1.get(i), s1.get(j));
-                //与[0]元素比较，返回大的
-                tem = Integer.valueOf(tem).compareTo(Integer.valueOf(result)) > 0 ? tem : result;
-
+                tem = compare2(tem, s1.get(j));
             }
             System.out.println("remove:" + tem);
             s1.remove(tem);
+            result += tem;
 
-            System.out.println("set:" + tem);
-            s2.add(n++, tem);//每加一个自增1使链表指针移向下一个位置
+            // System.out.println("set:" + tem);
+            // s2.add(n++, tem);//每加一个自增1使链表指针移向下一个位置
+        }
+        System.out.println(result);
+        // System.out.println(s2.toString());
+    }
+    private static void problem4_2(int[] ints) {
+
+        List<String> s1 = new ArrayList<>();
+
+        for (Integer integer : ints) {
+            System.out.println(integer);
+            s1.add(integer.toString());
         }
 
-        System.out.println(s2.toString());
+        String resultStr = "";
+        String temp = "";
+        for (int i = 0;i<s1.size();) {
+            temp = s1.get(i);
+            for (int j = i+1;j<s1.size();j++) {
+                temp = compare3(temp, s1.get(j));
+            }
+            resultStr += temp;
+            s1.remove(temp);
+        }
+        System.out.println(resultStr);
     }
-
     /**
      * compare1 方法1，自己写，比较麻烦
      * @param s1
@@ -241,7 +260,7 @@ public class Main {
     }
 
     private static String compare3(String s1, String s2) {
-        // 字符串拼接后转成整数比较最方便
+        // 因为一个元素内的数字不能拆开，字符串拼接后转成整数比较最方便
         if (Integer.valueOf(s1 + s2).compareTo(Integer.valueOf(s2 + s1)) > 0) {
             return s1;
         } else {

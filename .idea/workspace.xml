@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea109a52-91b5-42c1-b83b-500ba7daaceb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/filePractice/src/main/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/filePractice/src/main/ThreadMain.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/filePractice/src/other/TestThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/filePractice/main/MainClass.class" afterPath="$PROJECT_DIR$/out/production/filePractice/main/MainClass.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/filePractice/src/main/Main.java" afterPath="$PROJECT_DIR$/filePractice/src/main/Main.java" />
     </list>
     <ignored path="mygitProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,7 +53,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="609">
               <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-              <folding />
+              <folding>
+                <element signature="e#284#285#0" expanded="false" />
+                <element signature="e#326#327#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,16 +74,10 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/filePractice/src/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1560">
-              <caret line="242" column="57" selection-start-line="242" selection-start-column="57" selection-end-line="242" selection-end-column="57" />
+            <state relative-caret-position="4005">
+              <caret line="278" column="1" selection-start-line="278" selection-start-column="1" selection-end-line="278" selection-end-column="1" />
               <folding>
-                <element signature="method#problem1#0;class#Main#0" expanded="false" />
-                <element signature="method#recursion#0;class#Main#0" expanded="false" />
-                <element signature="method#problem2#0;class#Main#0" expanded="false" />
                 <element signature="method#compare1#0;class#Main#0" expanded="false" />
-                <element signature="method#compare2#0;class#Main#0" expanded="false" />
-                <element signature="method#compare3#0;class#Main#0" expanded="false" />
-                <marker date="1501842446998" expanded="false" signature="2743:3160" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -167,6 +161,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -241,9 +238,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -260,7 +254,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/SpringPractice/SpringNoMaven" />
   </component>
   <component name="RunManager" selected="Application.Unnamed">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -736,7 +730,8 @@
       <workItem from="1501635902417" duration="1801000" />
       <workItem from="1501722500828" duration="1342000" />
       <workItem from="1501739727551" duration="16000" />
-      <workItem from="1501814390052" duration="19473000" />
+      <workItem from="1501814390052" duration="20754000" />
+      <workItem from="1502071878854" duration="5500000" />
     </task>
     <task id="LOCAL-00001" summary="多个txt文件读取 写入到一个里">
       <created>1500000327801</created>
@@ -766,11 +761,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501577642058</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="线程以及程序员的一个小时五个题">
+      <created>1501842623751</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1501842623751</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110952000" />
+    <option name="totallyTimeSpent" value="117733000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -793,7 +795,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31436837" sideWeight="0.48931623" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3394407" sideWeight="0.48931623" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -820,49 +822,20 @@
     <MESSAGE value="无修改" />
     <MESSAGE value="反射练习" />
     <MESSAGE value="反射练习 文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="反射练习 文件" />
+    <MESSAGE value="线程以及程序员的一个小时五个题" />
+    <option name="LAST_COMMIT_MESSAGE" value="线程以及程序员的一个小时五个题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/filePractice/src/main/Main.java</url>
-          <line>169</line>
+          <line>263</line>
           <properties />
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/filePractice/src/main/Main.java</url>
-          <line>166</line>
-          <properties />
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/filePractice/src/main/Main.java</url>
-          <line>153</line>
-          <properties />
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/filePractice/src/main/Main.java</url>
-          <line>159</line>
-          <properties />
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/filePractice/src/main/Main.java</url>
-          <line>163</line>
-          <properties />
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/filePractice/src/main/Main.java</url>
-          <line>214</line>
-          <properties />
-          <option name="timeStamp" value="65" />
+          <option name="timeStamp" value="72" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="66" />
+      <option name="time" value="73" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1102,7 +1075,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="609">
           <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="e#284#285#0" expanded="false" />
+            <element signature="e#326#327#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1110,10 +1086,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
           <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
-          <folding>
-            <element signature="e#2496#2497#0" expanded="false" />
-            <element signature="e#2561#2562#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1135,16 +1107,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/filePractice/src/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="242" column="57" selection-start-line="242" selection-start-column="57" selection-end-line="242" selection-end-column="57" />
+        <state relative-caret-position="4005">
+          <caret line="278" column="1" selection-start-line="278" selection-start-column="1" selection-end-line="278" selection-end-column="1" />
           <folding>
-            <element signature="method#problem1#0;class#Main#0" expanded="false" />
-            <element signature="method#recursion#0;class#Main#0" expanded="false" />
-            <element signature="method#problem2#0;class#Main#0" expanded="false" />
             <element signature="method#compare1#0;class#Main#0" expanded="false" />
-            <element signature="method#compare2#0;class#Main#0" expanded="false" />
-            <element signature="method#compare3#0;class#Main#0" expanded="false" />
-            <marker date="1501842446998" expanded="false" signature="2743:3160" ph="{...}" />
           </folding>
         </state>
       </provider>
