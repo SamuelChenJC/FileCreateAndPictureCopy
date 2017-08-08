@@ -3,7 +3,7 @@ package proxy.interfaces;
 /**
  * Created by Chenpi on 2017/8/8.
  */
-public interface Subject {
+public interface InterfObject {
 
     public void rent();
 

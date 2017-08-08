@@ -2,7 +2,7 @@ package main;
 
 import proxy.DynamicProxy;
 import proxy.RealObject;
-import proxy.interfaces.Subject;
+import proxy.interfaces.InterfObject;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
@@ -18,7 +18,7 @@ public class ProxyMain {
     public static void main(String[] args) {
 
         // 我们要代理的真实对象
-        Subject realObject = new RealObject();
+        InterfObject realObject = new RealObject();
 
         // 我们要代理哪个真实对象，就将该对象传进去，最后是通过该真实对象来调用其方法的
         InvocationHandler handler = new DynamicProxy(realObject);
@@ -35,14 +35,14 @@ public class ProxyMain {
           *
          * 第三个参数handler， 我们这里将这个代理对象关联到了上方的 InvocationHandler 这个对象上
          */
-        Subject subject = (Subject) Proxy.newProxyInstance(handler.getClass().getClassLoader(), realObject.getClass().getInterfaces(), handler);
+        InterfObject interfObject = (InterfObject) Proxy.newProxyInstance(handler.getClass().getClassLoader(), realObject.getClass().getInterfaces(), handler);
 
-        System.out.println(subject.getClass().getName());
+        System.out.println(interfObject.getClass().getName());
 
-        subject.rent();
-        subject.hello("world!");
+        interfObject.rent();
+        interfObject.hello("world!");
 
-        String re = subject.add(11, 23);
+        String re = interfObject.add(11, 23);
         System.out.println(re);
 
     }

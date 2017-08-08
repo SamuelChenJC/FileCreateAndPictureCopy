@@ -1,11 +1,11 @@
 package proxy;
 
-import proxy.interfaces.Subject;
+import proxy.interfaces.InterfObject;
 
 /**
  * Created by Chenpi on 2017/8/8.
  */
-public class RealObject implements Subject {
+public class RealObject implements InterfObject {
     @Override
     public void rent() {
         System.out.println("RealObject的rent()方法被调用！");
