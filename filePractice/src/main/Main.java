@@ -15,23 +15,7 @@ public class Main {
 
         System.out.println("正在使用："+Main.class);
 
-        here:   //java 用于代替goto语句的“标记”功能，也可写成here:for (int i = 0;i<3;i++)，项目中会写成loop:会造成困扰，所以这里写here
-        for (int i = 0;i<3;i++) {
-            System.out.println("第一重：" + i);
-            for (int j = 0;j<3;j++) {
-                System.out.println("第二重：" + j);
-                for (int n = 0;n<3;n++) {
-                    if ((n+j)  == 4) {
-                        System.out.println("跳出多重循环！");
-                        break here;
-                    }
-                    System.out.println("第三重：" + n);
-                    System.out.println("=========================");
-                }
-            }
-        }
-        System.out.println("多重循环之后的代码");
-
+        loopLable();
         // there:
         // System.out.println("mark2 below there");
         // for (int i = 0;i<10;i++) {
@@ -299,6 +283,27 @@ public class Main {
      * */
     private static void problem5() {
 
+    }
+
+
+    public static void loopLable() {
+
+        here:   //java 用于代替goto语句的“标记”功能，也可写成here:for (int i = 0;i<3;i++)，项目中会写成loop:会造成困扰，所以这里写here
+        for (int i = 0;i<3;i++) {
+            System.out.println("第一重：" + i);
+            for (int j = 0;j<3;j++) {
+                System.out.println("第二重：" + j);
+                for (int n = 0;n<3;n++) {
+                    if ((n+j)  == 4) {
+                        System.out.println("跳出多重循环！");
+                        break here;
+                    }
+                    System.out.println("第三重：" + n);
+                    System.out.println("=========================");
+                }
+            }
+        }
+        System.out.println("多重循环之后的代码");
     }
 
 }
