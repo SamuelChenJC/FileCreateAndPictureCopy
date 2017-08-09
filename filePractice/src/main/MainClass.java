@@ -9,7 +9,10 @@ import other.FileUtil;
 public class MainClass {
 
     public static void main(String[] args) {
-    //    空白
+
+        System.out.println("正在使用："+MainClass.class);
+
+        //    空白
     }
 
     /**

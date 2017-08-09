@@ -17,6 +17,8 @@ import java.lang.reflect.Proxy;
 public class ProxyMain {
     public static void main(String[] args) {
 
+        System.out.println("正在使用："+ProxyMain.class);
+
         // 我们要代理的真实对象
         InterfObject realObject = new RealObject();
 

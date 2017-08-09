@@ -22,6 +22,8 @@ public class ReflectMain {
      */
     public static void main(String[] args) {
 
+        System.out.println("正在使用："+ReflectMain.class);
+
         try {
 
             //获取类信息以及类实例化

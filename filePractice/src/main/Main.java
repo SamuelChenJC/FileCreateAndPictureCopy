@@ -13,6 +13,8 @@ import java.util.*;
 public class Main {
     public static void main(String args[]) {
 
+        System.out.println("正在使用："+Main.class);
+
         // int[] ints1 = {1, 3, 5, 7, 9};
         // problem1(ints1);
         //

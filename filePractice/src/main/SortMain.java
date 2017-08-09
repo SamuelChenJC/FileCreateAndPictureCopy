@@ -7,6 +7,9 @@ import java.util.Arrays;
  */
 public class SortMain {
     public static void main(String[] args) {
+
+        System.out.println("正在使用："+SortMain.class);
+
         // int[] ints = {11, 66, 25, 95, 82, 3};
         // bubbleSort(ints);
 

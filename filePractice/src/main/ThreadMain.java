@@ -18,7 +18,10 @@ public class ThreadMain {
      * java编程思想 并发  示例2
      */
     public static void main(String args[]) {
-        Thread t = new Thread(new TestThread());
+
+        System.out.println("正在使用："+ThreadMain.class);
+
+        Thread t = new Thread(new TestThread(4));
         t.start();
         System.out.println("线程start后一条语句！");
         // for (int i=0;i<15;i++) {//输出穿插在线程的输出中，说明main线程和t线程是分片得到cpu时间去执行的
