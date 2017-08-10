@@ -1,5 +1,7 @@
 package main;
 
+import other.Problem5Solution;
+
 import java.util.*;
 
 /**
@@ -10,20 +12,13 @@ import java.util.*;
  */
 
 
-public class Main {
+public class FiveProblemMain {
     public static void main(String args[]) {
 
-        System.out.println("正在使用："+Main.class);
+        System.out.println("正在使用："+ FiveProblemMain.class);
 
-        loopLable();
-        // there:
-        // System.out.println("mark2 below there");
-        // for (int i = 0;i<10;i++) {
-        //     if (i%8==0) continue t;
-        // }
-
-        // int[] ints1 = {1, 3, 5, 7, 9};
-        // problem1(ints1);
+        int[] ints1 = {1, 3, 5, 7, 9};
+        problem1(ints1);
         //
         // String[] a = {"a", "B", "C","D","e"};
         // String[] b = {"1", "2", "3"};
@@ -83,13 +78,24 @@ public class Main {
 
             int re = series[i] + recursion(series, i + 1);
             //递归到最后一个，才第一次走到这一步
-            System.out.println("series[i] + recursion(series, i + 1) "+i+" : "+re);
+            System.out.println("series[i] : recursion(series, i + 1) "+i+" : "+re);
             return re;
         }
 
         return 0;
     }
+    // output:
 
+    // series[i] 0 : 1
+    // series[i] 1 : 3
+    // series[i] 2 : 5
+    // series[i] 3 : 7
+    // series[i] 4 : 9
+    // series[i] : recursion(series, i + 1) 4 : 9
+    // series[i] : recursion(series, i + 1) 3 : 16
+    // series[i] : recursion(series, i + 1) 2 : 21
+    // series[i] : recursion(series, i + 1) 1 : 24
+    // series[i] : recursion(series, i + 1) 0 : 25
 
     /**
      * 问题2
@@ -282,7 +288,15 @@ public class Main {
      * 例如：1 + 2 + 34 – 5 + 67 – 8 + 9 = 100。
      * */
     private static void problem5() {
+        Stack<Integer> stack = new Stack<Integer>();
+        stack.push(1);
 
+        Problem5Solution p = new Problem5Solution();
+
+        p.execute(1, stack, 1, new Stack<String>(), 9);
+
+        System.out.println(Problem5Solution.count);
+        System.out.println(Problem5Solution.countSum);
     }
 
 
