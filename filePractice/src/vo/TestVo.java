@@ -9,4 +9,14 @@ public class TestVo {
 
     public final int finalint = 10;
 
+    public String testStr = "string111";
+
+    public String getTestStr() {
+
+        return testStr;
+    }
+
+    public void setTestStr(String testStr) {
+        this.testStr = testStr;
+    }
 }
