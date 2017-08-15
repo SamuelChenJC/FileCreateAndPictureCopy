@@ -178,7 +178,7 @@ public class FiveProblemMain {
             result += tem;
 
             // System.out.println("set:" + tem);
-            // s2.add(n++, tem);//每加一个自增1使链表指针移向下一个位置
+            // s2.minus(n++, tem);//每加一个自增1使链表指针移向下一个位置
         }
         System.out.println(result);
         // System.out.println(s2.toString());

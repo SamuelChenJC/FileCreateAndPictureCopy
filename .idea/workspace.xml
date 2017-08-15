@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea109a52-91b5-42c1-b83b-500ba7daaceb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daHuaDesignMode/daHuaDesignMode.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daHuaDesignMode/src/main/ProxyModeMain.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daHuaDesignMode/src/main/decoratorMain.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daHuaDesignMode/src/mode/decoratorMode/BigTrouser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daHuaDesignMode/src/mode/decoratorMode/Finery.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daHuaDesignMode/src/mode/decoratorMode/Person.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daHuaDesignMode/src/mode/decoratorMode/Sneakers.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daHuaDesignMode/src/mode/decoratorMode/Tshirt.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daHuaDesignMode/src/mode/decoratorMode/WearSuit.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daHuaDesignMode/src/mode/proxyMode/GiveGift.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daHuaDesignMode/src/mode/proxyMode/Proxy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daHuaDesignMode/src/mode/proxyMode/Pursuit.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daHuaDesignMode/src/mode/proxyMode/SchoolGirl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/filePractice/src/main/MainClass.java" afterPath="$PROJECT_DIR$/filePractice/src/main/MainClass.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/filePractice/src/main/FiveProblemMain.java" afterPath="$PROJECT_DIR$/filePractice/src/main/FiveProblemMain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/filePractice/src/main/ThreadMain.java" afterPath="$PROJECT_DIR$/filePractice/src/main/ThreadMain.java" />
     </list>
     <ignored path="mygitProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -117,7 +104,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="decoratorMain.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="decoratorMain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/daHuaDesignMode/src/main/decoratorMain.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
@@ -127,22 +114,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sneakers.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/daHuaDesignMode/src/mode/decoratorMode/Sneakers.java">
+      <file leaf-file-name="ThreadMain.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/filePractice/src/main/ThreadMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="623">
+              <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+              <folding>
+                <element signature="e#1751#1752#0" expanded="true" />
+                <element signature="e#1789#1790#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Finery.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/daHuaDesignMode/src/mode/decoratorMode/Finery.java">
+      <file leaf-file-name="Thread.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Develop/jdk1.8.0_40/src.zip!/java/lang/Thread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-              <folding />
+            <state relative-caret-position="172">
+              <caret line="1133" column="24" selection-start-line="1133" selection-start-column="24" selection-end-line="1133" selection-end-column="24" />
+              <folding>
+                <element signature="e#43646#43647#0" expanded="true" />
+                <element signature="e#43691#43692#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/filePractice/src/other/TestThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+              <folding>
+                <element signature="e#284#285#0" expanded="true" />
+                <element signature="e#326#327#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -185,7 +191,6 @@
         <option value="$PROJECT_DIR$/filePractice/src/proxy/interfaces/InterfObject.java" />
         <option value="$PROJECT_DIR$/filePractice/src/vo/Test.java" />
         <option value="$PROJECT_DIR$/filePractice/src/other/TestThread.java" />
-        <option value="$PROJECT_DIR$/filePractice/src/main/ThreadMain.java" />
         <option value="$PROJECT_DIR$/filePractice/src/main/MainClass.java" />
         <option value="$PROJECT_DIR$/filePractice/src/main/ProxyMain.java" />
         <option value="$PROJECT_DIR$/filePractice/src/main/ReflectMain.java" />
@@ -210,6 +215,7 @@
         <option value="$PROJECT_DIR$/daHuaDesignMode/src/mode/proxyMode/Proxy.java" />
         <option value="$PROJECT_DIR$/daHuaDesignMode/src/main/ProxyMode.java" />
         <option value="$PROJECT_DIR$/daHuaDesignMode/src/main/ProxyModeMain.java" />
+        <option value="$PROJECT_DIR$/filePractice/src/main/ThreadMain.java" />
       </list>
     </option>
   </component>
@@ -227,9 +233,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-23" />
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1160" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -415,7 +422,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="daHuaDesignMode" />
+              <option name="myItemId" value="filePractice" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -429,17 +436,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="daHuaDesignMode" />
+              <option name="myItemId" value="filePractice" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -451,33 +454,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="daHuaDesignMode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proxyMode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mygitProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mygitProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daHuaDesignMode" />
+              <option name="myItemId" value="filePractice" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -933,7 +910,7 @@
     </configuration>
     <configuration default="false" name="Unnamed" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="main.ProxyModeMain" />
+      <option name="MAIN_CLASS_NAME" value="main.ThreadMain" />
       <option name="VM_PARAMETERS" value="-Dtmp.dir=E:\Git_Project\mygitProject" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -942,7 +919,7 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="daHuaDesignMode" />
+      <module name="filePractice" />
       <envs />
       <method />
     </configuration>
@@ -1000,7 +977,7 @@
       <workItem from="1502430746079" duration="13893000" />
       <workItem from="1502525654792" duration="882000" />
       <workItem from="1502674916659" duration="11772000" />
-      <workItem from="1502763072291" duration="5833000" />
+      <workItem from="1502763072291" duration="10502000" />
     </task>
     <task id="LOCAL-00001" summary="多个txt文件读取 写入到一个里">
       <created>1500000327801</created>
@@ -1100,18 +1077,26 @@
       <option name="project" value="LOCAL" />
       <updated>1502680024402</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="大话设计模式">
+      <created>1502782119478</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1502782119478</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203574000" />
+    <option name="totallyTimeSpent" value="208243000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-23" y="0" width="1936" height="1160" extended-state="0" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32706374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4252652" sideWeight="0.5106838" order="7" side_tool="true" content_ui="tabs" />
@@ -1123,19 +1108,18 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17681624" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959402" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32810867" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34862384" sideWeight="0.48931623" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54545456" sideWeight="0.48931623" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32706374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32810867" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1163,7 +1147,8 @@
     <MESSAGE value="java代替goto的标记用法" />
     <MESSAGE value="第五个问题" />
     <MESSAGE value="java 多态理解" />
-    <option name="LAST_COMMIT_MESSAGE" value="java 多态理解" />
+    <MESSAGE value="大话设计模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="大话设计模式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1324,24 +1309,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Develop/jdk1.8.0_40/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2016">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filePractice/src/other/TestThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/filePractice/src/main/SortMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1349,13 +1321,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filePractice/src/main/ThreadMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="53" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1405,6 +1373,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2604">
           <caret line="268" column="17" selection-start-line="268" selection-start-column="17" selection-end-line="268" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#FiveProblemMain#0" expanded="false" />
+            <element signature="docComment;method#problem1#0;class#FiveProblemMain#0" expanded="false" />
+            <element signature="docComment;method#problem2#0;class#FiveProblemMain#0" expanded="false" />
+            <element signature="method#problem2#0;class#FiveProblemMain#0" expanded="false" />
+            <element signature="docComment;method#problem3#0;class#FiveProblemMain#0" expanded="false" />
+            <element signature="method#problem3#0;class#FiveProblemMain#0" expanded="false" />
+            <element signature="docComment;method#problem4_1#0;class#FiveProblemMain#0" expanded="false" />
+            <element signature="method#problem4_1#0;class#FiveProblemMain#0" expanded="false" />
+            <element signature="e#4532#4568#0" expanded="false" />
+            <element signature="method#problem4_2#0;class#FiveProblemMain#0" expanded="false" />
+            <element signature="docComment;method#compare1#0;class#FiveProblemMain#0" expanded="false" />
+            <element signature="method#compare1#0;class#FiveProblemMain#0" expanded="false" />
+            <element signature="method#loopLable#0;class#FiveProblemMain#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1420,6 +1404,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1427,6 +1412,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding>
+            <element signature="e#1515#1516#0" expanded="false" />
+            <element signature="e#1549#1550#0" expanded="false" />
+            <element signature="e#1581#1582#0" expanded="false" />
+            <element signature="e#1615#1616#0" expanded="false" />
+            <element signature="e#1669#1670#0" expanded="false" />
+            <element signature="e#1703#1704#0" expanded="false" />
+            <element signature="e#1735#1736#0" expanded="false" />
+            <element signature="e#1769#1770#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1444,6 +1439,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1451,6 +1447,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1562,6 +1559,39 @@
         <state relative-caret-position="84">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filePractice/src/other/TestThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding>
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Develop/jdk1.8.0_40/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="1133" column="24" selection-start-line="1133" selection-start-column="24" selection-end-line="1133" selection-end-column="24" />
+          <folding>
+            <element signature="e#43646#43647#0" expanded="true" />
+            <element signature="e#43691#43692#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filePractice/src/main/ThreadMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+          <folding>
+            <element signature="e#1751#1752#0" expanded="true" />
+            <element signature="e#1789#1790#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
