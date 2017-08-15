@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/daHuaDesignMode/daHuaDesignMode.iml" filepath="$PROJECT_DIR$/daHuaDesignMode/daHuaDesignMode.iml" />
       <module fileurl="file://$PROJECT_DIR$/filePractice/filePractice.iml" filepath="$PROJECT_DIR$/filePractice/filePractice.iml" />
       <module fileurl="file://$PROJECT_DIR$/mygitProject.iml" filepath="$PROJECT_DIR$/mygitProject.iml" />
     </modules>
