@@ -1,5 +1,7 @@
 package main;
 
+import java.util.concurrent.locks.Lock;
+
 /**
  * Created by Chenpi on 2017/8/1.
  */
@@ -31,7 +33,7 @@ public class ThreadMain {
 
 
     /**
-     * 类似抢购的程序，两个线程分别取抢counter个商品，将Counter类的减犯法声明为同步，
+     * 类似抢购的程序，两个线程分别取抢counter个商品，将Counter类的减法声明为同步，
      * 则两个或多个线程调用同一个counter，每次之能减一个商品，当商品小于一个时则提示已售完
      * @param args
      */

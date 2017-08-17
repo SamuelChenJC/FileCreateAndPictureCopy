@@ -1,5 +1,7 @@
 package main;
 
+import vo.Human;
+import vo.Student;
 import vo.TestVo;
 
 import java.math.BigDecimal;
@@ -16,8 +18,12 @@ import java.util.List;
  */
 public class TestMain {
 
+    public static void main(String[] args) {
 
+        Student student = new Student();
 
+        student.getName();
+    }
 }
 
 
