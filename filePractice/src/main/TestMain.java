@@ -1,15 +1,6 @@
 package main;
 
-import vo.Human;
-import vo.Student;
-import vo.TestVo;
-
-import java.math.BigDecimal;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by Chenpi on 2017/8/10.
@@ -20,9 +11,12 @@ public class TestMain {
 
     public static void main(String[] args) {
 
-        Student student = new Student();
+        String aa = "01234567";
+        String bb = "15067136893";
 
-        student.getName();
+        System.out.println(aa.substring(2,5));
+        List Set = new ArrayList();
+
     }
 }
 

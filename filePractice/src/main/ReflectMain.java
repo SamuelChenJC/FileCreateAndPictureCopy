@@ -1,12 +1,12 @@
 package main;
 
-import vo.Student;
+import object.ReflectBo;
+import object.ReflectVo;
+import object.Student;
+import org.apache.commons.beanutils.BeanUtils;
+import org.apache.commons.beanutils.PropertyUtils;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.lang.reflect.Parameter;
-import java.math.BigDecimal;
+import java.lang.reflect.*;
 
 /**
  * Created by Chenpi on 2017/8/1.
@@ -33,6 +33,18 @@ public class ReflectMain {
             //获取类的方法
             getMethods();
 
+
+            ReflectBo bo = new ReflectBo();
+            bo.setName("陈金才");
+            bo.setShopentityId("991810");
+            bo.setSpell("cjc");
+            bo.setUsername("某某人");
+            bo.setUsertype((short) 1);
+            System.out.println(bo.toString());
+
+            ReflectVo vo = convertBo2Vo(new ReflectVo(), bo);
+            System.out.println(vo);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -42,18 +54,18 @@ public class ReflectMain {
         /**
          * 1 反射机制获取类三种方法 获取一个类的类型
          * */
-        // 1 类名或类 限定名 vo.Student
-        Class c1 = Class.forName("vo.Student");
-        System.out.println("c1: " + c1.getName());//输出 vo.Student
+        // 1 类名或类 限定名 object.Student
+        Class c1 = Class.forName("object.Student");
+        System.out.println("c1: " + c1.getName());//输出 object.Student
 
         // 2 java中每个类型都有class 属性.
         Class c2 = Student.class;
-        System.out.println("c2: " + c2.getName());//输出 vo.Student
+        System.out.println("c2: " + c2.getName());//输出 object.Student
 
         // 3 java语言中任何一个java对象都有getClass 方法
         Student student = new Student();
         Class c3 = student.getClass();
-        System.out.println("c3: " + c3);//输出 vo.Student
+        System.out.println("c3: " + c3);//输出 object.Student
 
 
 
@@ -75,8 +87,8 @@ public class ReflectMain {
          * 3,获取属性：分为所有的属性和指定的属性
          * */
         Field[] fields1 = c.getDeclaredFields();// 获取全部属性(公有&私有)
-        Field   field1   = c.getDeclaredField("birthDay");//获取指定属性 (私有也可)
-        System.out.println(field1);//output : private java.lang.String vo.Student.birthDay
+        Field   field1   = c.getDeclaredField("birthDay");//获取指定属性 (私有也可，单仅限于该类，不包含父类)
+        System.out.println(field1);//output : private java.lang.String object.Student.birthDay
 
         StringBuilder sb = new StringBuilder();//StringBuilder 非线程安全 但速度最快
         sb.append("类反射实验开始：");
@@ -130,4 +142,29 @@ public class ReflectMain {
         }
         System.out.println(sb);
     }
+
+
+    public static ReflectVo convertBo2Vo(ReflectVo vo, ReflectBo bo) {
+
+
+        try {
+            /**
+             * 两者都是“后赋前”，功能基本相同，但PropertyUtils发现同名属性为不同类型时，会在支持的数据类型范围内进行转换 Date型不支持
+             * ※ 两者都是同名属性才赋值（名字相同，大小写敏感）
+             * BeanUtils比PropertyUtils速度快
+             * ※ BeanUtils所花费的时间要超过取数 据、将其复制到对应的 value对象（通过手动调用get和set方法），以及通过串行化将其返回到远程的客户机的时间总和
+             */
+
+            // PropertyUtils.copyProperties(vo, bo);
+            BeanUtils.copyProperties(vo, bo);
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+        return vo;
+    }
+
 }
