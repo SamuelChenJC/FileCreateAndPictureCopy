@@ -11,6 +11,8 @@ import java.lang.reflect.Proxy;
  * Created by Chenpi on 2017/8/8.
  * http://www.cnblogs.com/xiaoluo501395377/p/3383130.html 测试动态代理的main
  *
+ * http://www.cnblogs.com/cenyu/p/6289209.html（这里代理模式写的也不错）
+ *
  * AOP的原理就是java的动态代理机制
  *
  */
